@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int knapsack(int W, vector<int>& weights, vector<int>& values, int n){
+int knapsack(int W, vector<int>& weights, vector<int>& values, int n){ // Computational Complexity: O(n*W), where n is the number of items and W is the maximum weight capacity of the knapsack. Two loops are used, this implies a multiplication of n and w. Also, the space complexity is O(n*W), where the 2D Vector requires storing (n + 1) × (W + 1).
+
     // Create a 2D vector to store the maximum benefit at each step
     vector<vector<int>> B(n + 1, vector<int>(W + 1, 0));
 
